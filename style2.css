@@ -1,0 +1,139 @@
+@keyframes animateY {
+    0%   {left:0px; top:-50px;}
+    100% {left:0px; top:0px;}
+}
+
+@keyframes fade {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+* {
+    margin: 10px;
+    background-color: whitesmoke;
+    color: green;
+    font-family: "Roboto", sans-serif;
+}
+
+form {
+    animation: fade 3s ease-in-out;
+}
+
+.header a{
+    color: green;
+    text-align: left;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    position: relative;
+    animation: animateY 1s ease forwards;
+    background: none;
+    animation-timing-function: ease-in-out;
+    text-decoration: none;
+}
+
+.header-content h4 {
+    text-align: center;
+    font-weight: 200;
+}
+
+.header-content p {
+    text-align: center;
+    font-weight: 500;
+    animation: fade 5s ease;
+}
+
+.logo {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 50px;
+    height: auto;
+}
+
+.message h2 {
+    text-align: center;
+    margin-left: 65px;
+    font-size: 25px;
+    text-decoration: none;
+    color: green;
+    font-family: "Roboto", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+    animation: fade 5s ease;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav ul li a:hover {
+    color: green;
+}
+
+nav ul li a {
+    display: block;
+    transition: color 0.5s ease;
+    text-decoration: none;
+}
+
+.title h2 {
+    text-align: center;
+    text-decoration: none;
+    color: green;
+    text-shadow: 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+    animation: fade 5s ease;
+}
+
+.content ul li a {
+    color: green;
+    animation: fade 3s ease;
+}
+
+.content ul li {
+    text-align: center;
+    list-style-type: none
+}
+
+#buttonMain {
+    border: 1px solid gray;
+    font-size: 20px;
+    animation: fade 3s ease;
+}
+
+#buttonEnvironmental {
+    border: 1px solid gray;
+    font-size: 20px;
+    animation: fade 3s ease;
+}
+
+#buttonHealth {
+    border: 1px solid gray;
+    font-size: 20px;
+    animation: fade 3s ease;
+}
+
+#mainList {
+    display: none;
+}
+
+#environmentalList {
+    display: none;
+}
+
+#healthList {
+    display: none;
+}
+
+#practice {
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 500px;
+    animation: fade 8s ease;
+}
