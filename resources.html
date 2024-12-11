@@ -1,155 +1,37 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Forms</title>
-        <link rel = "stylesheet" href = "style2.css">
-        <link rel = "icon" type = "image/png" href = "favicon.ico" sizes = "32x32">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecotera health</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="icon" type="image/png" href="favicon.ico" sizes="32x32">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">\
+</head>
 <body>
-    <header class = "header">
-        <h1><a href="index.html">ecotera health</a></h1>
-    </header>
-    <div class = "message">
-        <h2><em>click to see resources.</em></h2>
-    </div>
-    <nav>
-        <ul>
-            <li><button id = "buttonMain">Main Links</a></li>
-            <li><button id = "buttonEnvironmental">Environmental Links</a></li>
-            <li><button id = "buttonHealth">Health Links</a></li>
-        </ul>
-    </nav>
-    <main>
-            <div class = "content">
-                <ul id = "mainList">
-                    <li>
-                        <a href = "">Link 1</a>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <a href = "">Link 2</a>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <a href = "">Link 3</a>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <a href = "">Link 4</a>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <a href = "">Link 5</a>
-                    </li>
-                </ul>
-                <ul id = "environmentalList">
-                    <li>
-                        <a href = "">Link 1</a>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <a href = "">Link 2</a>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <a href = "">Link 3</a>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <a href = "">Link 4</a>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <a href = "">Link 5</a>
-                    </li>
-                </ul>
-                <ul id = "healthList">
-                    <li>
-                        <a href = "">Link 1</a>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <a href = "">Link 2</a>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <a href = "">Link 3</a>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <a href = "">Link 4</a>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <a href = "">Link 5</a>
-                    </li>
-                </ul>
-    </main>
-    </body>
+  <img src="microplastics.png" id = "myImage">
+    <header>
+      <h1 id = "top-left">ecotera health</h1>
+      <nav class="navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+      </nav>
+  </header>
+  <div class = "content2">
+    <p><b>
+        Resources.
+    </b> </p>
+  </div>
+  <div class = "footer">
+    <p>
+      <a href = "https://www.instagram.com/ecoterahealth/">Instagram</a> | <a href = "https://twitter.com/ecoterahealth">Twitter</a>
+    </p>
+  </div>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
 </html>
-<script>
-        document.getElementById("buttonMain").addEventListener("click", function() {
-         const baList = document.getElementById("healthList"); 
-         baList.style.display = "none";
-         const iList = document.getElementById("environmentalList"); 
-         iList.style.display = "none";
-         const bList = document.getElementById("mainList"); 
-         if (bList.style.display === "none" || bList.style.display === "") 
-         { bList.style.display = "block";}
-         else {
-            bList.style.display = "none";
-         }
-         })
-    
-         document.getElementById("buttonEnvironmental").addEventListener("click", function() {
-        const bList = document.getElementById("mainList"); 
-         bList.style.display = "none";
-         const baList = document.getElementById("healthList"); 
-         baList.style.display = "none";
-         const iList = document.getElementById("environmentalList"); 
-         if (iList.style.display === "none" || iList.style.display === "") 
-         { iList.style.display = "block";}
-         else {
-            iList.style.display = "none";
-         }
-         })
-         document.getElementById("buttonHealth").addEventListener("click", function() {
-        const bList = document.getElementById("mainList"); 
-         bList.style.display = "none";
-         const iList = document.getElementById("environmentalList"); 
-         iList.style.display = "none";
-         const baList = document.getElementById("healthList"); 
-         if (baList.style.display === "none" || baList.style.display === "") 
-         { baList.style.display = "block";}
-         else {
-            baList.style.display = "none";
-         }
-         })
-</script>

@@ -245,7 +245,21 @@ header {
 .content {
     color: white;
     opacity: 100%;
-    text-align:left;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 30;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.content2 {
+    color: white;
+    opacity: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 50;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .remember-forgot label input{
